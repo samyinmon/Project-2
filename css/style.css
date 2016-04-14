@@ -5,7 +5,6 @@
 }
 
 body {
-
   font-family: 'Noto Sans', sans-serif;
   background: #fafafa;
 }
@@ -28,7 +27,7 @@ a {
 }
 
 .name,
-.main-nav li {
+.main-nav a {
   text-align: center;
   margin-top: 7px;
   margin-bottom: 7px;
@@ -36,13 +35,13 @@ a {
   padding: 15px 15px
 }
 
-.main-nav li {
+.main-nav a {
   display: block;
   background: #fff;
   font-size: 1.2em;
 }
 
-ul.main-nav {
+.main-nav {
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -156,7 +155,7 @@ footer {
   margin-right: 30px;
   font-weight: bold;
 
-  
+
 }
 
 .namebottom {
@@ -173,7 +172,7 @@ footer {
 footer p {
   margin-top: 40px;
   margin-bottom: 40px;
-  
+
 }
 
 .botnav {
@@ -194,15 +193,14 @@ footer p {
   margin-top: 20px;
 }
 
-	.main-nav,
-	.main-nav li {
+	.main-nav a {
 		display: inline-block;
     background-color: inherit;
     font-size: 1em;
 	}
 
 .container {
-  text-align: center; 
+  text-align: center;
 }
 
 	.name {
@@ -222,18 +220,19 @@ footer p {
 }
 
 
-.col {   
+.col {
 		display: inline-block;
-		width: 50%; 
+		width: 50%;
 		margin-right: -5px;
     margin-left: -5px;
     font-size: .9em;
+    vertical-align: top;
 	}
 
 .skills ul {
   padding: 30px;
   max-width: 80%;
-  
+
 }
 
 
@@ -266,49 +265,62 @@ footer p {
   margin-right: 15px;
 }
 
-} 
+}
 
 @media (min-width: 1024px) {
 
+.main-header {
+  overflow: auto;
+}
 
 	.name {
     display: inline-block;
     font-size: 1.5rem;
-    float: left;
+    float:
     margin-left: 15px;
+  position: absolute;
+  left: 30px;
 }
 
-  .main-nav {
-    float: right;
+.main-nav {
+  position: absolute;
+  right: 30px;
 }
 
-  .bio,
-  .profile-img {
+  .bio {
     padding-right: 30px;
     padding-left: 30px;
     max-width: 60%;
-    padding-bottom: 120px;
+  float: left;
+    margin-top: 80px;
 
 }
 
+  .bio p {
+    margin-top: 0;
+}
+
+
   .profile-img {
-    position: absolute;
-    right: 0;
+    float: right;
+    margin-right: 30px;
+  margin-top: 80px;
 }
 
   .profile-img {
     display: inline-block;
     text-align: right;
-    
+
 }
 
 
-.col {   
+.col {
 		display: inline-block;
-		width: 33.3%; 
+		width: 33.3%;
 		margin-right: -5px;
     margin-left: -5px;
-    
+    vertical-align: top;
+
 	}
 
 .content p {
